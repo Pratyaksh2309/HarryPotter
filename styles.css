@@ -7,7 +7,7 @@ body {
     position: relative;
     background: url('https://www.wizardingworld.com/assets/_next/static/images/bg@2x-615807669b89ca41d9cbee545542b954.jpg') no-repeat center center fixed;
     background-size: cover;
-    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=26747'), auto;
+    cursor: url('./cursor.png'), auto;
 }
 
 header {
