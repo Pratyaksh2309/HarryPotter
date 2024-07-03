@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome Harry Potter</h1>
+            <nav>
+                <a href="#intro">Introduction</a>
+                <a href="#movies">Movies</a>
+                <a href="#books">Books</a>
+                <a href="#characters">Characters</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#carousel-section"> Quotes</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="intro">
+            <h2>Introduction to Harry Potter</h2>
+            <p>Harry Potter is a series of seven fantasy novels written by British author J.K. Rowling.</p>
+        </section>
+        
+        <section id="movies">
+            <h2>Harry Potter Movies</h2>
+            <p>The Harry Potter film series is based on the seven novels and consists of eight fantasy films. The films star Daniel Radcliffe as Harry Potter, Rupert Grint as Ron Weasley, and Emma Watson as Hermione Granger.</p>
+        </section>
+        
+        <section id="books">
+            <h2>Harry Potter Books</h2>
+            <p>The Harry Potter books chronicle the life and adventures of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.</p>
+            <ul>
+                <li>Harry Potter and the Philosopher's Stone</li>
+                <li>Harry Potter and the Chamber of Secrets</li>
+                <li>Harry Potter and the Prisoner of Azkaban</li>
+                <li>Harry Potter and the Goblet of Fire</li>
+                <li>Harry Potter and the Order of the Phoenix</li>
+                <li>Harry Potter and the Half-Blood Prince</li>
+                <li>Harry Potter and the Deathly Hallows</li>
+            </ul>
+        </section>
+        
+        <section id="characters">
+            <h2>Main Characters</h2>
+            <div class="character">
+                <h3>Harry Potter</h3>
+                <p>Harry James Potter is the titular protagonist of the series. He is known as "The Boy Who Lived" and is famous for his lightning-shaped scar.</p>
+            </div>
+            <div class="character">
+                <h3>Hermione Granger</h3>
+                <p>Hermione Jean Granger is one of Harry's best friends. She is exceptionally intelligent and always scores top marks in her classes.</p>
+            </div>
+            <div class="character">
+                <h3>Ron Weasley</h3>
+                <p>Ronald Bilius Weasley is another of Harry's best friends. He comes from a large family and has a great sense of humor.</p>
+            </div>
+        </section>
+        
+        <section id="quiz">
+            <h2>Harry Potter Quiz</h2>
+            <div id="quiz-container"></div>
+        </section>
+
+        <section id="carousel-section">
+            <h2>Quotes</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+        
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./carousel-image-1.jpg" class="d-block w-100" alt="Carousel Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./carousel-image-2.jpg" class="d-block w-100" alt="Carousel Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./carousel-image-3.jpg" class="d-block w-100" alt="Carousel Image 3">
+                    </div>
+                </div>
+        
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Made By Pratyaksh</p>
+        <p> Visit website for HP books : <a href=" https://wizardingfriends.wordpress.com/ " target="_blank"> wizardingfriends  </a> </p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

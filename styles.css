@@ -1,0 +1,204 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    position: relative;
+    background: url('https://www.wizardingworld.com/assets/_next/static/images/bg@2x-615807669b89ca41d9cbee545542b954.jpg') no-repeat center center fixed;
+    background-size: cover;
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=26747'), auto;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 2px solid #d2691e;
+}
+
+
+.header-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d2691e;
+}
+
+nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 4px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none; /* Hide nav links by default on smaller screens */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: rgba(44, 62, 80, 0.9);
+        padding: 1em 0;
+        z-index: 999;
+        text-align: center;
+    }
+
+    nav.open {
+        display: flex; /* Show nav links when menu is open */
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 1em 0;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #e0e0e0;
+        margin: 4px 0;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .hamburger.open .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+main {
+    margin-top: 2rem;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 80%;
+    margin: 2em 0;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust the opacity for more transparency */
+    backdrop-filter: blur(15px); /* Increase the blur for stronger frosted glass effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Add a subtle border */
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+}
+
+section:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly increase opacity on hover */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Increase border opacity on hover */
+}
+
+h1, h2 {
+    color: #d2691e;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.character {
+    margin-bottom: 1.5em;
+}
+
+footer {
+    background-color: rgba(44, 62, 80, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    z-index: 1;
+    border-top: 2px solid #d2691e;
+}
+
+.question {
+    margin-bottom: 2em;
+}
+
+.question button {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #3498db;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question button:hover {
+    background-color: #2980b9;
+} 
+
+.result {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.wizardingworld.com/assets/_next/static/images/bg@2x-615807669b89ca41d9cbee545542b954.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+a{
+    color:#e0e0e0;
+}
+
+.carousel-inner {
+    max-height: 300px; /* Example max-height for the carousel */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Ensure images are responsive within carousel */
+    height: auto; /* Maintain aspect ratio */
+}
